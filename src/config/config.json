@@ -1,0 +1,10 @@
+{
+  "test": {
+    "PORT": 3000,
+    "MONGODB_URI": "mongodb://brian:helloman@ds255889.mlab.com:55889/guesswut"
+  },
+  "development": {
+    "PORT": 3000,
+    "MONGODB_URI": "mongodb://brian:helloman@ds255889.mlab.com:55889/guesswut"
+  }
+}
