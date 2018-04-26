@@ -1,10 +1,12 @@
 {
   "test": {
     "PORT": 3000,
-    "MONGODB_URI": "mongodb://brian:helloman@ds255889.mlab.com:55889/guesswut"
+    "MONGODB_URI": "mongodb://brian:helloman@ds255889.mlab.com:55889/guesswut",
+    "JWT_SECRET": "poijasdf98435jpgfdpoij3"
   },
   "development": {
     "PORT": 3000,
-    "MONGODB_URI": "mongodb://brian:helloman@ds255889.mlab.com:55889/guesswut"
+    "MONGODB_URI": "mongodb://brian:helloman@ds255889.mlab.com:55889/guesswut",
+    "JWT_SECRET": "pojiaj234oi234oij234oij4"
   }
 }
