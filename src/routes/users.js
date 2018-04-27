@@ -3,7 +3,7 @@ const _ = require('lodash');
 const User = require('../models/user');
 
 const register = (req, res) => {
-  const body = _.pick(req.body, ['email', 'password']);
+  const body = _.pick(req.body, ['email', 'name', 'password']);
   const user = new User(body);
 
   user
