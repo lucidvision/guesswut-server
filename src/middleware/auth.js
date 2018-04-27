@@ -1,4 +1,6 @@
-const User = require('./../models/user');
+const mongoose = require('mongoose');
+
+const User = mongoose.model('User');
 
 const checkAuth = (req, res, next) => {
   if (req.path === '/api/register' || req.path === '/api/login') {

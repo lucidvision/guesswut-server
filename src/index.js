@@ -1,5 +1,6 @@
 require('./config/config');
 require('./db/mongoose');
+require('./models');
 const express = require('express');
 const expressGraphQL = require('express-graphql');
 const middleware = require('./middleware');

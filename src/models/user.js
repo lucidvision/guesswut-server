@@ -28,6 +28,42 @@ const UserSchema = new Schema({
     require: true,
     minlength: 6,
   },
+  hosting: [
+    {
+      gameId: {
+        type: Schema.Types.ObjectId,
+        required: true,
+        ref: 'game',
+      },
+    },
+  ],
+  playing: [
+    {
+      gameId: {
+        type: Schema.Types.ObjectId,
+        required: true,
+        ref: 'game',
+      },
+    },
+  ],
+  friends: [
+    {
+      userId: {
+        type: Schema.Types.ObjectId,
+        required: true,
+        ref: 'user',
+      },
+    },
+  ],
+  requests: [
+    {
+      userId: {
+        type: Schema.Types.ObjectId,
+        required: true,
+        ref: 'user',
+      },
+    },
+  ],
   tokens: [
     {
       access: {

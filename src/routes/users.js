@@ -1,6 +1,7 @@
+const mongoose = require('mongoose');
 const _ = require('lodash');
 
-const User = require('../models/user');
+const User = mongoose.model('User');
 
 const register = (req, res) => {
   const body = _.pick(req.body, ['email', 'name', 'password']);
