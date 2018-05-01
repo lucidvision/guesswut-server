@@ -30,38 +30,37 @@ const UserSchema = new Schema({
   },
   hosting: [
     {
-      gameId: {
-        type: Schema.Types.ObjectId,
-        required: true,
-        ref: 'game',
-      },
+      type: Schema.Types.ObjectId,
+      required: true,
+      ref: 'Game',
     },
   ],
   playing: [
     {
-      gameId: {
-        type: Schema.Types.ObjectId,
-        required: true,
-        ref: 'game',
-      },
+      type: Schema.Types.ObjectId,
+      required: true,
+      ref: 'Game',
     },
   ],
   friends: [
     {
-      userId: {
-        type: Schema.Types.ObjectId,
-        required: true,
-        ref: 'user',
-      },
+      type: Schema.Types.ObjectId,
+      required: true,
+      ref: 'User',
     },
   ],
-  requests: [
+  pendingFriends: [
     {
-      userId: {
-        type: Schema.Types.ObjectId,
-        required: true,
-        ref: 'user',
-      },
+      type: Schema.Types.ObjectId,
+      required: true,
+      ref: 'User',
+    },
+  ],
+  friendRequests: [
+    {
+      type: Schema.Types.ObjectId,
+      required: true,
+      ref: 'User',
     },
   ],
   tokens: [

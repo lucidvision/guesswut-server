@@ -5,7 +5,7 @@
   "author": "Brian Park <brianpark25@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon index.js NODE_ENV=development",
+    "dev": "nodemon --inspect index.js NODE_ENV=development",
     "start": "node index.js",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"

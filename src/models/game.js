@@ -13,7 +13,9 @@ const GameSchema = new Schema({
     },
   ],
   host: {
-    type: String,
+    type: Schema.Types.ObjectId,
+    required: true,
+    ref: 'User',
   },
   imageUrl: {
     type: String,
@@ -24,12 +26,13 @@ const GameSchema = new Schema({
   players: [
     {
       type: Schema.Types.ObjectId,
-      ref: 'user',
+      required: true,
+      ref: 'User',
     },
   ],
   winner: {
     type: Schema.Types.ObjectId,
-    ref: 'user',
+    ref: 'User',
   },
 });
 
